@@ -10,6 +10,10 @@ use Mix.Config
 config :rocketpay,
   ecto_repos: [Rocketpay.Repo]
 
+config :rocketpay, :basic_auth,
+  username: "rocketpay",
+  password: "123456"
+
 # Configures the endpoint
 config :rocketpay, RocketpayWeb.Endpoint,
   url: [host: "localhost"],
