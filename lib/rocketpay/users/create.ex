@@ -5,7 +5,7 @@ defmodule Rocketpay.Users.Create do
   def call(params) do
     Multi.new()
     |> Multi.insert(:create_user, User.changeset(params))
-    |> Multi.run(:create_accountm, fn repo, %{create_user: user} ->
+    |> Multi.run(:create_account, fn repo, %{create_user: user} ->
       insert_acocunt(repo, user)
     end)
     |> Multi.run(:preload_data, fn repo, %{create_user: user} ->

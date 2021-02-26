@@ -8,7 +8,7 @@ use Mix.Config
 config :rocketpay, Rocketpay.Repo,
   username: "postgres",
   password: "postgres",
-  database: "postgres#{System.get_env("MIX_TEST_PARTITION")}",
+  database: "postgres_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
 
