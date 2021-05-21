@@ -1,0 +1,184 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2021-05-21T23:44:18.577Z",
+  "__export_source": "insomnia.desktop.app:v2021.3.0",
+  "resources": [
+    {
+      "_id": "req_f26aa8edcc844173a44f35d473f8e4b5",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614355881806,
+      "created": 1614275966215,
+      "url": "http://localhost:4000/api/accounts/transaction",
+      "name": "Transaction",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"value\": \"5.00\",\n\t\"from\": \"a453e4e3-badb-4c3a-9ca0-e71750fe15ba\",\n\t\"to\": \"cebe88aa-0daf-44e4-aa69-4cdd13fbadc7\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_4c6adca13bed42d3a369d8a271ea3c04"
+        }
+      ],
+      "authentication": {
+        "type": "basic",
+        "useISO88591": false,
+        "disabled": false,
+        "username": "rocketpay",
+        "password": "123456"
+      },
+      "metaSortKey": -1614275966215,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "parentId": null,
+      "modified": 1621640637808,
+      "created": 1614105917937,
+      "name": "Rocketpay",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_afe5be27c4874effb533f26f9048ec5d",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614277531715,
+      "created": 1614271831500,
+      "url": "http://localhost:4000/api/accounts/a453e4e3-badb-4c3a-9ca0-e71750fe15ba/withdraw",
+      "name": "Withdraw",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"value\": \"25.00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_a0af2bd78c6c42349c142b5df23a969b"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614271831500,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f47b385ef1cb4beaa73ccf08cb7e394c",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614277657664,
+      "created": 1614270957299,
+      "url": "http://localhost:4000/api/accounts/a453e4e3-badb-4c3a-9ca0-e71750fe15ba/deposit",
+      "name": "Deposit",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"value\": \"25.00\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_6c5e0aa0e7794561be5274e250861537"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614270957299,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_908c764df6f5431a94cee0d2579cd339",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1621639216424,
+      "created": 1614105926080,
+      "url": "http://localhost:4000/api/users",
+      "name": "CreateUser",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"Luiz\",\n\t\"nickname\": \"Luuuu9\",\n\t\"age\": 18,\n\t\"email\": \"luizfernandoklein10@live.com\",\n\t\"password\": \"123456\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json",
+          "id": "pair_fffc783d66054e7091e6fd6634fc18b5"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1614105926080,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_9a469d8920aa275fc25166a4555e289ef7ca73cb",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614105917990,
+      "created": 1614105917990,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1614105917991,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_9a469d8920aa275fc25166a4555e289ef7ca73cb",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614105917993,
+      "created": 1614105917993,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    },
+    {
+      "_id": "spc_4344c93f9a3941cf9c63d9ba13de695f",
+      "parentId": "wrk_c5d8fac29a3a4da1af5e5896f2f6061d",
+      "modified": 1614105917946,
+      "created": 1614105917946,
+      "fileName": "NLW4",
+      "contents": "",
+      "contentType": "yaml",
+      "_type": "api_spec"
+    }
+  ]
+}
