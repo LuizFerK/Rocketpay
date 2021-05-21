@@ -29,9 +29,9 @@ defmodule RocketpayWeb.AccountsControllerTest do
         |> json_response(:ok)
 
       assert %{
-        "account" => %{"balance" => "50.00", "id" => _id},
-        "message" => "Ballance changed successfully"
-      } = response
+               "account" => %{"balance" => "50.00", "id" => _id},
+               "message" => "Ballance changed successfully"
+             } = response
     end
 
     test "when there are invalid params, return an error", %{conn: conn, account_id: account_id} do

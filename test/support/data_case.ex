@@ -16,6 +16,8 @@ defmodule Rocketpay.DataCase do
 
   use ExUnit.CaseTemplate
 
+  alias Ecto.Adapters.SQL.Sandbox
+
   using do
     quote do
       alias Rocketpay.Repo
@@ -28,10 +30,10 @@ defmodule Rocketpay.DataCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rocketpay.Repo)
+    :ok = Sandbox.checkout(Rocketpay.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Rocketpay.Repo, {:shared, self()})
+      Sandbox.mode(Rocketpay.Repo, {:shared, self()})
     end
 
     :ok

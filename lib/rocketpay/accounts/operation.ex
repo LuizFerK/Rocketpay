@@ -38,6 +38,7 @@ defmodule Rocketpay.Accounts.Operation do
   defp handle_cast(:error, _balance, _operation), do: {:error, "Invalid deposit value!"}
 
   defp update_account({:error, _reason} = error, _repo, _account), do: error
+
   defp update_account(value, repo, account) do
     params = %{balance: value}
 

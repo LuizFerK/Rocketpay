@@ -13,8 +13,8 @@ defmodule RocketpayWeb.AccountsView do
   end
 
   def render("transaction.json", %{
-    transaction: %TransactionResponse{to_account: to_account, from_account: from_account}
-  }) do
+        transaction: %TransactionResponse{to_account: to_account, from_account: from_account}
+      }) do
     %{
       message: "Transaction done successfully",
       transaction: %{

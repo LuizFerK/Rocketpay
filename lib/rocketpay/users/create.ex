@@ -1,6 +1,6 @@
 defmodule Rocketpay.Users.Create do
   alias Ecto.Multi
-  alias Rocketpay.{Repo, User, Account}
+  alias Rocketpay.{Account, Repo, User}
 
   def call(params) do
     Multi.new()
